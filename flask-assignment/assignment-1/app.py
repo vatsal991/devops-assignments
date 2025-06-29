@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-
+# Making changes for task 3
 @app.route('/api')
 def hello_world():
     with open('data.json', 'r') as file:
