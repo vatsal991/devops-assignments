@@ -1,0 +1,29 @@
+{
+    "dev": {
+        "age": 20,
+        "city": "New York",
+        "hobbies": [
+            "reading",
+            "gaming",
+            "coding"
+        ]
+    },
+    "anjali": {
+        "age": 22,
+        "city": "Los Angeles",
+        "hobbies": [
+            "painting",
+            "dancing",
+            "cooking"
+        ]
+    },
+    "rohit": {
+        "age": 21,
+        "city": "Chicago",
+        "hobbies": [
+            "photography",
+            "traveling",
+            "music"
+        ]
+    }
+}
