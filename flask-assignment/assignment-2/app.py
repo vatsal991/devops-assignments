@@ -9,6 +9,7 @@ app.config["MONGO_URI"] = os.getenv("MONGO_URI")
 mongo = PyMongo(app)
 collection = mongo.db.my_collection
 
+# Making changes for task 3
 @app.route("/", methods=["GET", "POST"])
 def form():
     error = None
