@@ -1,0 +1,29 @@
+services:
+  backend:
+    build: ./backend
+    image: backend:latest
+    container_name: backend_container
+    restart: always
+    ports:
+      - "5000:5000"
+    networks:
+      - app-network
+
+  frontend:
+    build: 
+      context: ./frontend
+      args:
+        VITE_BACKEND_URL: http://localhost:5000
+    image: frontend:latest
+    container_name: frontend_container
+    depends_on:
+      - backend
+    restart: always
+    ports:
+      - "3000:4173"
+    networks:
+      - app-network 
+
+networks:
+  app-network:
+    driver: bridge

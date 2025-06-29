@@ -2,3 +2,7 @@
 pyvenv.cfg
 /lib64
 /bin
+node_modules
+.env
+/docker-assignment/backend/test
+.vite
